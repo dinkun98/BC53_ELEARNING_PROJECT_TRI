@@ -1,4 +1,6 @@
-Tài khoản Admin: 
-tk: 111111Ss!@##
-mk: 123456aA
+Hướng dẫn Sử Dụng
+==================
 
+### Tài Khoản Quản Trị (Admin)
+- **Tài Khoản:** 111111Ss!@##
+- **Mật Khẩu:** 123456aA
