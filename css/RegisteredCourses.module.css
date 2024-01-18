@@ -1,0 +1,59 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: linear-gradient(to left, #227df9 20%, #7462f9, #df3ef8);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+@media screen and (max-width: 820.98px) {
+  .content {
+    display: block;
+  }
+}
+
+.btnRegistered {
+  padding: 5px 20px;
+  border: none;
+  position: relative;
+  background-image: linear-gradient(90deg, #2d7af9 30%, #a752f8 80%);
+  transition: all 0.5s ease;
+  z-index: 1;
+  font-weight: 600;
+}
+.btnRegistered span {
+  transition: all 0.3s ease;
+}
+.btnRegistered::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: #ffffff;
+  z-index: -1;
+}
+.btnRegistered::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 100%;
+  transition: all 0.5s ease;
+  z-index: 1;
+  background-image: linear-gradient(to left, #df3ef8 0%, #7462f9 50%, #227df9 100%);
+}
+.btnRegistered:hover::after {
+  right: 2px;
+}
+.btnRegistered:hover span {
+  position: relative;
+  z-index: 2;
+  color: white;
+}

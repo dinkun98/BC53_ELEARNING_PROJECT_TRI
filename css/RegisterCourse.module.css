@@ -1,0 +1,57 @@
+.registerCourse {
+  padding: 10px;
+  box-shadow: 1px 1px 10px 4px #dadada;
+}
+.registerCourse .btnRegisterCourse {
+  width: 100%;
+  display: block;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  transition: all 0.5s ease;
+  z-index: 1;
+  font-weight: 600;
+  background-image: linear-gradient(90deg, #2d7af9 30%, #a752f8 80%);
+}
+.registerCourse .btnRegisterCourse span {
+  transition: all 0.4s ease;
+  font-weight: 600;
+  color: #000000;
+}
+.registerCourse .btnRegisterCourse::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: #ffffff;
+  z-index: -1;
+}
+.registerCourse .btnRegisterCourse::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 100%;
+  transition: all 0.5s ease;
+  z-index: 1;
+  background-image: linear-gradient(to left, #df3ef8 0%, #7462f9 50%, #227df9 100%);
+}
+.registerCourse .btnRegisterCourse:hover::after {
+  right: 0;
+}
+.registerCourse .btnRegisterCourse:hover span {
+  position: relative;
+  z-index: 2;
+  font-weight: 600;
+  background: #ffffff;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.registerCourse .btnRegisterCourse:hover {
+  transform: scale(0.98);
+}

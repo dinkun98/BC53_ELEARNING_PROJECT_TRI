@@ -1,0 +1,24 @@
+.boxCourse {
+  position: relative;
+  overflow: hidden;
+}
+.boxCourse::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background: linear-gradient(90deg, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, 0.3));
+  top: 0;
+  left: -160%;
+  height: 100%;
+  width: 70%;
+  transform: skewX(-20deg);
+}
+.boxCourse:hover::before {
+  animation: shine 1.5s;
+}
+
+@keyframes shine {
+  100% {
+    left: 170%;
+  }
+}

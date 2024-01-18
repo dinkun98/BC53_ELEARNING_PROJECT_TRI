@@ -1,0 +1,24 @@
+.btnUser {
+  background: linear-gradient(to left, #227df9 0%, #7462f9 25%, #df3ef8 50%, #7462f9 75%, #227df9 100%);
+  background-size: 250% auto;
+  transition: all 0.5s ease;
+  transition-timing-function: ease, ease;
+  width: 100%;
+  @apply mt-5 block p-2 text-white rounded-[4px];
+}
+.btnUser:hover {
+  background-position: right center;
+  animation: scaleBtn 1s ease-in-out infinite;
+}
+
+@keyframes scaleBtn {
+  0% {
+    transform: scale(0.97);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.97);
+  }
+}

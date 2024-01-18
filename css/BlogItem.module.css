@@ -1,0 +1,15 @@
+.btnSeeMore {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 10px 20px;
+  transition-duration: ease, ease;
+  background: linear-gradient(to left, #227df9 0%, #7462f9 25%, #df3ef8 50%, #7462f9 75%, #227df9 100%);
+  background-size: 250% auto;
+  transition: 0.5s all ease;
+}
+.btnSeeMore:hover {
+  background-position: right center;
+  transform: scale(0.9);
+}

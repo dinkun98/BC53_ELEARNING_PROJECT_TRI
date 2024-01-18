@@ -1,0 +1,16 @@
+.sponsorsItem {
+  padding: 0 20px;
+}
+.sponsorsItem img {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+  height: 220px;
+  min-height: 220px;
+}
+.sponsorsItem h2 {
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+}

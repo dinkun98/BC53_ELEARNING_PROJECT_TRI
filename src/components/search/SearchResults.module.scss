@@ -1,0 +1,162 @@
+@import '../../utils/mixin.scss';
+@import '../../utils/variable.scss';
+
+.resultTitle{
+    padding: 10px 20px;
+    font-size: $text-400;
+    font-weight: 500;
+    color: $cWhite;
+    background: $cTeal-500;
+}
+.resultItem{
+    padding: 30px 20px;
+    border-bottom: 1px solid gainsboro;
+    .searchSeeMore{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        right: 5%;
+        text-align: right;
+        .btnSearchSeeMore {
+            padding: 5px 20px;
+            border: none;
+            position: relative;
+            background-image: linear-gradient(90deg, #2d7af9 30%, #a752f8 80%);
+            transition: all .5s ease;
+            z-index: 1;
+            font-weight: 600;
+        
+            span {
+                transition: all .3s ease;
+            }
+        
+            &::before {
+                content: "";
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                right: 2px;
+                bottom: 2px;
+                background-color: $cWhite;
+                z-index: -1;
+            }
+        
+            &::after {
+                content: "";
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                bottom: 2px;
+                right: 100%;
+                transition: all .5s ease;
+                z-index: 1;
+                background-image: linear-gradient(to left, #df3ef8 0%, #7462f9 50%, #227df9 100%);
+            }
+        
+            &:hover::after {
+                right: 2px;
+            }
+        
+            &:hover span {
+                position: relative;
+                z-index: 2;
+                color: white;
+            }
+        }
+        
+    }
+    
+    @media screen and (max-width: 1920px) {
+        .content{
+            .contentItem{
+                display: flex;
+                flex-direction: row;
+                padding: 8px;
+                span{
+                    line-height: 15px;
+                    padding: 4px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 992px) {
+        .content{
+            .contentItem{
+                display: flex;
+                flex-direction: column;
+                padding: 8px;
+                
+                svg{
+                    font-size: 1.3rem;
+                }
+                span{
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .searchSeeMore{
+            position: initial;
+            text-align: left;
+            margin: 10px 0;
+        }
+        
+    }
+    @media screen and (max-width: 768px) {
+        .content{
+            .contentItem{
+                display: flex;
+                flex-direction: row;
+                span{
+                    line-height: 15px;
+                    padding: 4px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 602px) {
+        .content{
+
+            .contentItem{
+                display: flex;
+                flex-direction: column;
+                padding: 8px;
+                
+            }
+        }
+    }
+    @media screen and (max-width: 414.98px) {
+        .resultItem{
+            padding: 0;
+        }
+        .title{
+            h1{
+                margin: 0rem;
+            }
+        }
+        .content{
+            .contentItem{
+                display: flex;
+                flex-direction: column;
+                padding: 8px;
+            }
+        }
+    }
+    @media screen and (max-width: 320px) {
+        .title{
+            h1{
+                font-size: .92rem;
+            }
+        }
+        .contentItem{
+            padding: 6px !important;
+            span{
+                font-size:.6rem
+            }
+        }
+    }
+}
+
+.resultItem:last-child{
+    border-bottom: none;
+}

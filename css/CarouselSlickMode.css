@@ -1,0 +1,78 @@
+li.slick-active .slickDots {
+  opacity: 1 !important;
+}
+
+.slickDots:hover {
+  opacity: 1 !important;
+}
+
+.setPrev, .setNext {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  z-index: 1;
+  font-size: 20px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.setNext {
+  right: 0;
+}
+
+.setPrev {
+  left: 0;
+}
+
+.setPrev::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: linear-gradient(to left, rgb(21, 128, 61) 0%, rgb(21, 128, 61) 50%, rgb(62, 126, 85) 100%);
+  opacity: 0.7;
+  top: 40%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 30px;
+  height: 30px;
+  z-index: -1;
+  border-radius: 0 10px 10px 0;
+  transition: all 0.5s;
+}
+
+.setNext::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: linear-gradient(to right, rgb(21, 128, 61) 0%, rgb(21, 128, 61) 50%, rgb(62, 126, 85) 100%);
+  opacity: 0.7;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 30px;
+  height: 30px;
+  z-index: -1;
+  border-radius: 10px 0 0 10px;
+  transition: all 0.5s;
+}
+
+.setPrev:hover, .setNext:hover {
+  opacity: 1;
+}
+
+.setPrev:hover::after, .setNext:hover::after {
+  width: 20px;
+}
+
+@media screen and (min-width: 414.98px) {
+  .setPrev::after, .setNext::after {
+    height: 60px;
+  }
+  .setPrev:hover::after, .setNext:hover::after {
+    width: 30px;
+  }
+  .setPrev, .setNext {
+    font-size: 30px;
+  }
+}

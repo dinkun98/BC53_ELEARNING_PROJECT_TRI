@@ -1,0 +1,8 @@
+.page404Found{
+    background: url('../../assets/image/notFound/dribbble_1.gif');
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}

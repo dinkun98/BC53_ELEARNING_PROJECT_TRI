@@ -1,0 +1,55 @@
+.btnGradient {
+  @apply px-2 py-1 lg:px-3 lg:py-2 mr-3 md:text-sm lg:text-sm;
+  background: linear-gradient(to left, #227df9 0%, #7462f9 25%, #df3ef8 50%, #7462f9 75%, #227df9 100%);
+  background-size: 250% auto;
+  transition: all 0.5s ease;
+  transition-timing-function: ease, ease;
+}
+.btnGradient:hover {
+  background-position: right center;
+  transform: scale(0.9);
+}
+
+.gradientText {
+  background: linear-gradient(to right, #227df9 0%, #7462f9 30%, #df3ef8 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.action {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+}
+.action h1 {
+  background-color: rgb(20, 184, 166);
+  width: 200px;
+  color: #ffffff;
+  padding: 5px 10px;
+  position: absolute;
+  bottom: 115%;
+  right: 0;
+  box-shadow: 0 0 20px gainsboro;
+  display: none;
+}
+.action h1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -25%;
+  right: 5%;
+  border-top: 15px solid rgb(20, 184, 166);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.action:hover h1 {
+  display: block;
+}
+
+.portfolio__bg {
+  background-color: blue;
+}
+
+.portfolio__bg {
+  background-color: red;
+}

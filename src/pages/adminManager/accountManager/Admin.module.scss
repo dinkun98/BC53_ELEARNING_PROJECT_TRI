@@ -1,0 +1,43 @@
+@import '../../../utils/mixin.scss';
+@import '../../../utils/variable.scss';
+
+.btnGradient{
+    @apply px-2 py-1 lg:px-3 lg:py-2 mr-3 md:text-sm lg:text-sm text-white;
+    @include btnGradient(linear-gradient(to left, #227df9 0%, #7462f9 25%, #df3ef8 50%, #7462f9 75%, #227df9 100%),250% auto , all 0.5s ease);
+    transition-timing-function: ease, ease;
+   
+}
+
+.gradientText {
+    @include textGradient(linear-gradient(to right, #227df9 0%, #7462f9 30%, #df3ef8 100%));
+}
+
+.action{
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    h1{
+        background-color: $cTeal-500;
+        width: 200px;
+        color: $cWhite;
+        padding: 5px 10px;
+        position: absolute;
+        bottom: 115%;
+        right: 0;
+        box-shadow: 0 0 20px gainsboro;
+        display: none;
+        &::after{
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -25%;
+            right: 8%;
+            border-top: 15px solid $cTeal-500;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+        }
+    }
+    &:hover h1 {
+        display: block;
+    }
+}

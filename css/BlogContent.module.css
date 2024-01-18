@@ -1,0 +1,53 @@
+.blogCategory {
+  position: relative;
+}
+.blogCategory::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #227df9 0%, #7462f9 25%, #df3ef8 50%, #7462f9 75%, #227df9 100%);
+}
+.blogCategory .blogComment {
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(156, 163, 175);
+  cursor: pointer;
+}
+.blogCategory .blogComment h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+.blogCategory .blogComment p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(156, 163, 175);
+  margin-top: 10px;
+}
+.blogCategory .blogComment .blogCommentImg {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.blogCategory .blogComment .blogCommentImg img {
+  width: 50px;
+  height: 50px;
+  object-position: center;
+  object-fit: cover;
+  display: block;
+  border-radius: 100%;
+}
+.blogCategory .blogComment .blogCommentImg span {
+  margin-left: 10x;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(20, 184, 166);
+}
+.blogCategory .blogComment:hover h3 {
+  color: rgb(20, 184, 166);
+}
+.blogCategory .blogComment:last-child {
+  border-bottom: none;
+}

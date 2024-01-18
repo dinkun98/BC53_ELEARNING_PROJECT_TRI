@@ -1,0 +1,11 @@
+@import '../../../utils/mixin.scss';
+@import '../../../utils/variable.scss';
+
+.btnEditProfile{
+    padding: 10px 40px;
+    font-size: $text-300;
+    transition-timing-function: ease, ease;
+    font-weight: 600;
+    color: $cWhite;
+    @include btnGradient($c3GradientLeft, 250% auto, all .5s ease);
+}

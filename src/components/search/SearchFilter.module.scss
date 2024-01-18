@@ -1,0 +1,56 @@
+@media screen and (max-width: 1440.98px) {
+    .filter{
+            padding:1rem ;
+       
+    }
+    .rate{
+        span{
+                font-size: 1.3rem;
+        }
+}
+    }
+    @media screen and (max-width: 621px) {
+        .rate{
+                span{
+                        font-size: .75rem;
+                }
+        }
+        .filter{
+                padding:0.5rem ;
+                label{
+                        span{
+                                font-size: 12px;
+                        }
+                }
+        }
+        }
+@media screen and (max-width: 414.98px) {
+.filter{
+        padding:0.5rem ;
+        label{
+                span{
+                        font-size: 10px;
+                }
+        }
+}
+.rate{
+        .py-2{
+                padding: 0;
+        }
+        span{
+                font-size: .95rem;
+                li{
+                        margin-inline-end: 0px !important;
+                }
+        }
+}
+}
+@media screen and (max-width: 320px) {
+        .rate{
+                span{
+                        font-size: .7rem;
+                }
+        }
+        
+}
+// 

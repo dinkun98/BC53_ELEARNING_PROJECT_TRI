@@ -1,0 +1,14 @@
+.btnEditProfile {
+  padding: 10px 40px;
+  font-size: 1rem;
+  transition-timing-function: ease, ease;
+  font-weight: 600;
+  color: #ffffff;
+  background: linear-gradient(to left, #227df9 20%, #7462f9, #df3ef8);
+  background-size: 250% auto;
+  transition: all 0.5s ease;
+}
+.btnEditProfile:hover {
+  background-position: right center;
+  transform: scale(0.9);
+}

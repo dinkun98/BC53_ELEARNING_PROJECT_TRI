@@ -1,0 +1,57 @@
+.contentCourse {
+  margin-bottom: 40px;
+}
+.contentCourse .btnView {
+  padding: 5px 20px;
+  border: none;
+  position: relative;
+  background-image: linear-gradient(90deg, #2d7af9 30%, #a752f8 80%);
+  transition: all 0.5s ease;
+  z-index: 1;
+  font-weight: 600;
+}
+.contentCourse .btnView span {
+  transition: all 0.3s ease;
+}
+.contentCourse .btnView::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+  background-color: #ffffff;
+  z-index: -1;
+}
+.contentCourse .btnView::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 100%;
+  transition: all 0.5s ease;
+  z-index: 1;
+  background-image: linear-gradient(to left, #df3ef8 0%, #7462f9 50%, #227df9 100%);
+}
+.contentCourse .btnView:hover::after {
+  right: 2px;
+}
+.contentCourse .btnView:hover span {
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+.contentCourse .lessonContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 1px 1px 2px 1px rgba(239, 244, 190, 0.27);
+  cursor: pointer;
+}
+@media screen and (max-width: 414.98px) {
+  .contentCourse .lessonContainer {
+    display: block;
+  }
+}

@@ -1,0 +1,106 @@
+.reviewItem {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.reviewItem .reviewImg {
+  position: relative;
+  background: linear-gradient(to right, #7462f9, #df3ef8);
+  width: 250px;
+  height: 250px;
+  line-height: 250px;
+  text-align: center;
+  border-radius: 5px 50% 50% 50%;
+  z-index: 10;
+}
+.reviewItem .reviewImg img {
+  width: 200px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.reviewItem .triangleBox {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  border-bottom: 45px solid #f6ba35;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transform: rotate(-45deg);
+}
+.reviewItem .dot1Box {
+  position: absolute;
+  top: 12%;
+  left: 7%;
+  height: 70px;
+  background-size: 10px 10px;
+  width: 20%;
+  background-image: radial-gradient(#41b294 10%, transparent 11%), radial-gradient(#41b294 10%, transparent 11%);
+}
+.reviewItem .dot2Box {
+  position: absolute;
+  bottom: 0%;
+  right: 10%;
+  height: 100px;
+  background-size: 10px 10px;
+  width: 100px;
+  border-radius: 100%;
+  background-image: radial-gradient(#41b294 10%, transparent 11%), radial-gradient(#41b294 10%, transparent 11%);
+}
+.reviewItem blockquote q {
+  font-size: 1rem;
+  line-height: 28px;
+  font-weight: 500;
+  text-align: justify;
+}
+.reviewItem blockquote q::before {
+  position: absolute;
+  top: 10%;
+  left: -2%;
+  font-family: fantasy;
+  color: #ed85ab;
+  font-size: 60px;
+}
+@media screen and (max-width: 821.98px) {
+  .reviewItem blockquote q::before {
+    top: -10px;
+    left: 10px;
+  }
+}
+@media screen and (max-width: 414.98px) {
+  .reviewItem blockquote q::before {
+    top: -10px;
+    left: 10px;
+  }
+}
+.reviewItem p {
+  color: grey;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.reviewItem .reviewName {
+  color: #ed85ab;
+  margin-top: 20px;
+}
+.reviewItem .dot3Box {
+  position: absolute;
+  top: -18%;
+  left: 10%;
+  height: 60px;
+  background-size: 10px 10px;
+  width: 80px;
+  background-image: radial-gradient(#f6ba35 10%, transparent 11%), radial-gradient(#f6ba35 10%, transparent 11%);
+}
+.reviewItem .dot4Box {
+  position: absolute;
+  bottom: 0%;
+  right: 10%;
+  height: 70px;
+  background-size: 10px 10px;
+  width: 20%;
+  background-image: radial-gradient(rgb(22, 163, 74) 10%, transparent 11%), radial-gradient(rgb(22, 163, 74) 10%, transparent 11%);
+}

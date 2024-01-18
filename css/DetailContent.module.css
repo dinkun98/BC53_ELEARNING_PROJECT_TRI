@@ -1,0 +1,21 @@
+.detailContent .CourseName {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #000000;
+}
+.detailContent .itemsTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+@media screen and (max-width: 414.98px) {
+  .detailContent {
+    padding: 0 20px;
+  }
+  .detailContent .itemsTop {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

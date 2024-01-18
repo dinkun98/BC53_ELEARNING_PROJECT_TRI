@@ -1,0 +1,40 @@
+.ant-tabs-ink-bar {
+  border-bottom: 2px solid rgb(22, 163, 74);
+}
+
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: rgb(22, 163, 74) !important;
+}
+
+.customPrev, .customNext {
+  @apply p-1 lg:p-2;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  z-index: 1;
+  font-size: 20px;
+  opacity: 0.6;
+  text-align: center;
+  border-radius: 100%;
+  display: inline-block;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.customPrev:hover, .customNext:hover {
+  opacity: 1;
+}
+
+.customNext {
+  right: 0%;
+}
+
+.customPrev {
+  left: 0%;
+}
+
+.customPrev:hover::after, .customNext:hover::after {
+  width: 100%;
+}

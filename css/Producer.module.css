@@ -1,0 +1,20 @@
+.producer {
+  background: url("../../assets/image/event/lightTech.32807735.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+  z-index: 1;
+  position: relative;
+}
+
+.producer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: -1;
+  background: linear-gradient(90deg, rgba(124, 121, 122, 0.5), rgba(111, 183, 241, 0.5) 100%);
+}

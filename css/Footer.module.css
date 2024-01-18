@@ -1,0 +1,91 @@
+.footer {
+  background-color: #f0f8ff;
+}
+.footer .social .logoFooter {
+  display: flex;
+  align-items: center;
+}
+.footer .social .logoFooter img {
+  width: 50px;
+  display: block;
+}
+.footer .social .logoFooter h3 {
+  font-weight: 700;
+  font-size: 25px;
+  text-shadow: 2px 2px 2px rgba(114, 111, 111, 0.6392156863);
+}
+.footer .social .iconSocial {
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+.footer .social .iconSocial:hover {
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+.footer .social .iconSocial:hover span {
+  color: rgb(13, 148, 136);
+}
+.footer .social .iconSocial i {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 30px;
+  background-color: rgb(13, 148, 136);
+  font-size: 14px;
+  border-radius: 100%;
+  color: #ffffff;
+}
+.footer .social .iconSocial span {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 10px;
+  transition: all 0.5s;
+}
+.footer .btnFooter {
+  background: linear-gradient(to left, #227df9 0%, #7462f9 25%, #df3ef8 50%, #7462f9 75%, #227df9 100%);
+  background-size: 250% auto;
+  transition: all 0.5s ease;
+  transition-timing-function: ease, ease;
+  @apply px-4 py-2 text-white font-semibold text-lg hover:rounded-md;
+}
+.footer .btnFooter:hover {
+  background-position: right center;
+  transform: scale(0.9);
+}
+.footer .iconsBottom {
+  display: flex;
+}
+.footer .iconsBottom i {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  background: linear-gradient(to right, #227df9 20%, #7462f9, #df3ef8);
+  font-size: 14px;
+  border-radius: 10px;
+  color: #ffffff;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.footer .iconsBottom i:hover {
+  border-radius: 100%;
+  box-shadow: 1px 2px 2px 1px #636363;
+}
+.footer .linkFooter {
+  font-size: 18px;
+  font-weight: 500;
+  padding-top: 10px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.footer .linkFooter:hover {
+  padding-top: 8px;
+  padding-bottom: 2px;
+  color: rgb(13, 148, 136);
+}

@@ -1,0 +1,64 @@
+.aboutSlide {
+  background: url("../../assets/image/aboutBG/bgAbout.19ac825c.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 450px;
+  width: 100%;
+  background-attachment: fixed;
+}
+.aboutSlide .aboutItem {
+  @apply container mx-auto;
+  padding: 150px 0;
+  text-align: center;
+}
+.aboutSlide .aboutItem h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f6ba35;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  display: inline-block;
+  position: relative;
+}
+.aboutSlide .aboutItem h3::before, .aboutSlide .aboutItem h3::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+}
+.aboutSlide .aboutItem h3::before {
+  background: white;
+  animation: writeText 7s steps(21) 1s forwards infinite;
+}
+.aboutSlide .aboutItem h3::after {
+  top: 5px;
+  width: 1px;
+  background-color: rgb(6, 6, 6);
+  animation: blinkMouse 900ms steps(21) infinite, writeText 7s steps(21) 1s forwards infinite;
+}
+.aboutSlide .aboutItem h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  background: linear-gradient(to left, #227df9 0%, #7462f9 25%, #df3ef8 50%, #7462f9 75%, #227df9 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.aboutSlide .aboutItem p {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+@keyframes writeText {
+  to {
+    left: 105%;
+  }
+}
+@keyframes blinkMouse {
+  to {
+    background: transparent;
+  }
+}

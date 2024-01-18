@@ -1,0 +1,51 @@
+.btnUser {
+  background: linear-gradient(to left, #227df9 0%, #7462f9 25%, #df3ef8 50%, #7462f9 75%, #227df9 100%);
+  background-size: 250% auto;
+  transition: all 0.5s ease;
+  transition-timing-function: ease, ease;
+  width: 100%;
+  @apply mt-5 block p-2 text-white rounded-lg;
+}
+.btnUser:hover {
+  background-position: right center;
+  animation: scaleBtn 1s ease-in-out infinite;
+}
+
+.btnGlobal {
+  @apply px-2 py-1 lg:px-3 lg:py-2 mr-3 md:text-sm lg:text-sm;
+  background: linear-gradient(to left, #227df9 0%, #7462f9 25%, #df3ef8 50%, #7462f9 75%, #227df9 100%);
+  background-size: 250% auto;
+  transition: all 0.5s ease;
+  transition-timing-function: ease, ease;
+}
+.btnGlobal:hover {
+  background-position: right center;
+  transform: scale(0.9);
+}
+
+@keyframes scaleBtn {
+  0% {
+    transform: scale(0.97);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.97);
+  }
+}
+.backToHome {
+  position: fixed;
+  color: white;
+  top: 5%;
+  left: 3%;
+  font-size: 25px;
+  border: 1px solid white;
+  width: 45px;
+  height: 45px;
+  line-height: 50px;
+  text-align: center;
+  display: block;
+  border-radius: 100%;
+  cursor: pointer;
+}
